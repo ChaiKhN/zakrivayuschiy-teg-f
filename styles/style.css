@@ -100,6 +100,7 @@
 	block-size: 2px;
   display: block;
   background-color: currentColor;
+  transform-origin: left;
 }
 
 .theme-menu__button:hover,
@@ -115,7 +116,6 @@
 .theme-menu__button:focus-visible::after,
 .button:hover::before {
 	transform: scaleX(1);
-	transform-origin: left;
 }
 /*------------------------------------MAIN-----------------------------------*/
 .main {
