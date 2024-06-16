@@ -50,17 +50,19 @@
 
 .header__subtitle {
 	font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-	margin-block-end: 20px;
+	margin-block-end: 25px;
 }
 
 .header__theme-menu {
   font-size: 14px;
+  display: grid;
+  justify-items: center;
 }
 
 .theme-menu__list {
 	padding-inline-start: 20px;
   display: grid;
-	gap: 6px;
+	gap: 10px;
 }
 
 .theme-menu__button {
@@ -113,6 +115,7 @@
 .theme-menu__button:focus-visible::after,
 .button:hover::before {
 	transform: scaleX(1);
+	transform-origin: left;
 }
 /*------------------------------------MAIN-----------------------------------*/
 .main {
@@ -208,6 +211,7 @@
 	display: flex;
 	justify-content: end;
 	gap: 5px;
+  cursor: pointer;
 }
 
 .card__icon-button {
@@ -272,6 +276,10 @@
 	transform-origin: left;
 }
 
+.like-icon {
+  display: flex;
+  align-content: center;
+}
 /*------------------------------------FOOTER-----------------------------------*/
 .footer {
 	margin: 52px auto 100px;
